@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Medicare Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-hospital"></i>
+        <h2>Medicare Hospital</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointment</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn">Login</a>
+        <a href="appointment-records.html">Records</a>
+    </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h1>Contact Medicare Hospital</h1>
+        <p>We're here to help you 24/7. Get in touch with us anytime.</p>
+    </div>
+
+    <div class="hero-image">
+        <img src="images/contact.png" alt="Contact Hospital">
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="services">
+
+<h2 class="title">Get In Touch</h2>
+
+<div class="service-container">
+
+<!-- Contact Details -->
+<div class="card">
+<i class="fa-solid fa-location-dot"></i>
+<h3>Address</h3>
+<p>123 Health Street,<br>Hyderabad, Telangana, India</p>
+
+<br>
+
+<i class="fa-solid fa-phone"></i>
+<h3>Phone</h3>
+<p>+91 98765 43210</p>
+
+<br>
+
+<i class="fa-solid fa-envelope"></i>
+<h3>Email</h3>
+<p>info@medicarehospital.com</p>
+
+<br>
+
+<i class="fa-solid fa-clock"></i>
+<h3>Working Hours</h3>
+<p>Open 24 × 7</p>
+
+</div>
+
+<!-- Contact Form -->
+<div class="card">
+
+<form id="contactForm">
+
+<input type="text" placeholder="Your Name" required><br><br>
+
+<input type="email" placeholder="Your Email" required><br><br>
+
+<input type="text" placeholder="Subject" required><br><br>
+
+<textarea rows="6" placeholder="Your Message" required></textarea><br><br>
+
+<button class="hero-btn" type="submit">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Google Map -->
+<section class="services">
+
+<h2 class="title">Find Us</h2>
+
+<div class="card" style="padding:15px;">
+
+<iframe
+src="https://www.google.com/maps?q=Hyderabad&output=embed"
+width="100%"
+height="350"
+style="border:0;border-radius:12px;"
+allowfullscreen=""
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<h3>Medicare Hospital</h3>
+
+<p>Providing Quality Healthcare Since 2000</p>
+
+<div class="social">
+
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+
+</div>
+
+<p>&copy; 2026 Medicare Hospital. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+
+document.getElementById("contactForm").addEventListener("submit",function(e){
+
+e.preventDefault();
+
+alert("✅ Thank you! Your message has been sent successfully.");
+
+this.reset();
+
+});
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>

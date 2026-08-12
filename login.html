@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Medicare Hospital</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <i class="fa-solid fa-hospital"></i>
+        <h2>Medicare Hospital</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="appointments.html">Appointment</a>
+        <a href="contact.html">Contact</a>
+        <a href="login.html" class="btn">Login</a>
+        <a href="appointment-records.html">Records</a>
+    </nav>
+</header>
+
+<!-- Login Section -->
+<section class="services">
+
+<h2 class="title">Hospital Login</h2>
+
+<div class="card" style="max-width:450px; margin:40px auto;">
+
+<i class="fa-solid fa-user-doctor"
+style="font-size:70px; color:#0077ff; margin-bottom:20px;"></i>
+
+<form id="loginForm">
+
+<input type="email"
+placeholder="Enter Email"
+required><br><br>
+
+<input type="password"
+placeholder="Enter Password"
+required><br><br>
+
+<button class="hero-btn" type="submit">
+Login
+</button>
+
+<br><br>
+
+<p style="text-align:center;">
+Don't have an account?
+<a href="#">Register</a>
+</p>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- Footer -->
+<footer>
+
+<h3>Medicare Hospital</h3>
+
+<p>Providing Quality Healthcare Since 2000</p>
+
+<div class="social">
+<i class="fab fa-facebook"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-linkedin"></i>
+</div>
+
+<p>&copy; 2026 Medicare Hospital. All Rights Reserved.</p>
+
+</footer>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    alert("✅ Login Successful!");
+
+    window.location.href = "dashboard.html";
+});
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
